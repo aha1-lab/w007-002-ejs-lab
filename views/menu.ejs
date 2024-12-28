@@ -12,7 +12,7 @@
   <h2>Mains</h2>
   <% menu.forEach((meal)=>{%>
     <% if(meal.category == 'mains'){%>
-    <li><%=meal.name%></li>
+    <li><%=meal.name%> <%= meal.rating== 5 ? "⭐": ""%></li>
     <ul>
       <li>Price: $<%=meal.price%></li>
       <li>Description: <%=meal.details%></li>
@@ -22,7 +22,7 @@
   <h2>Desserts</h2>
   <% menu.forEach((meal)=>{%>
     <% if(meal.category == 'desserts'){%>
-    <li><%=meal.name%></li>
+    <li><%=meal.name%> <%= meal.rating== 5 ? "⭐": ""%></li>
     <ul>
       <li>Price: $<%=meal.price%></li>
       <li>Description: <%=meal.details%></li>
@@ -32,7 +32,7 @@
   <h2>Sides</h2>
   <% menu.forEach((meal)=>{%>
     <% if(meal.category == 'sides'){%>
-    <li><%=meal.name%></li>
+    <li><%=meal.name%> <%= meal.rating== 5 ? "⭐": ""%></li>
     <ul>
       <li>Price: $<%=meal.price%></li>
       <li>Description: <%=meal.details%></li>
